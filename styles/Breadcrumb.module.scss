@@ -1,0 +1,47 @@
+.breadcrumb {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__itemLink {
+    text-decoration: none;
+  }
+
+  &__itemName {
+    color: var(--color-deep-black);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 127.7%;
+
+    &_last {
+      color: var(--color-salmon-pink);
+      font-weight: 700;
+    }
+  }
+
+  &__itemDivider {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .breadcrumb {
+    &__itemDivider {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .breadcrumb {
+    &__itemName {
+      font-size: 12px;
+    }
+
+    &__itemDivider {
+      padding: 0 10px;
+    }
+  }
+}

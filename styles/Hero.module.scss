@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  min-height: 1000px;
+  &__bgImg {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    width: 300%;
+    height: 100%;
+    transform: translateX(-50%);
+    background-image: url(../public/images/clover-bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% -7px;
+  }
+
+  &__linesBg {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: -800px;
+    width: 3000px;
+    height: 140%;
+    background-image: url(../public/images/green-lines.svg);
+    background-repeat: no-repeat;
+    background-position: 100px -15px;
+  }
+
+  &__row {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 175px;
+  }
+
+  &__logo {
+    position: absolute;
+    z-index: 30;
+    top: 404px;
+    left: 25px;
+
+    & svg {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    position: absolute;
+    z-index: 30;
+    top: 175px;
+    right: -105px;
+  }
+
+  &__clover {
+    position: absolute;
+    z-index: -1;
+    top: -110px;
+    left: -92px;
+  }
+}
+
+@media screen and (max-width: (1200px)) {
+  .hero {
+    min-height: 800px;
+    &__logo {
+      top: 330px;
+      left: 0;
+      width: 323px;
+    }
+
+    &__phone {
+      top: 285px;
+      right: -185px;
+      width: 485px;
+    }
+
+    &__clover {
+      display: none;
+    }
+    &__linesBg {
+      background-position: -90px -15px;
+    }
+  }
+}
+
+@media screen and (max-width: (767px)) {
+  .hero {
+    min-height: 750px;
+    &__logo {
+      top: 205px;
+      left: 25px;
+      width: 230px;
+    }
+
+    &__phone {
+      top: 390px;
+      right: -75px;
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: (420px)) {
+  .hero {
+    min-height: 400px;
+    &__logo {
+      top: -27px;
+      left: 0;
+      width: 171px;
+    }
+
+    &__linesBg {
+      left: -245px;
+      width: 300%;
+      background-image: url(../public/images/green-lines-mobile.svg);
+      background-position: -50px -50px;
+    }
+
+    &__phone {
+      top: 140px;
+      right: -30px;
+      width: 187px;
+    }
+
+    &__clover {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.aboutClover {
+  position: relative;
+  z-index: 1;
+  margin-top: -350px;
+  padding-top: 485px;
+
+  &__wrapper {
+    padding-bottom: 40px;
+  }
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -600px;
+    width: 3000px;
+    height: 100%;
+    background-image: url(../public/images/clover-arch.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 115px;
+    gap: 30px;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 365px;
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 140%;
+
+    &::before {
+      position: absolute;
+      top: -36px;
+      width: 72px;
+      height: 6px;
+      content: "";
+      border-radius: 50px;
+      background: var(--color-light-green);
+    }
+  }
+
+  &__info {
+    max-width: 465px;
+  }
+  & p {
+    margin-bottom: 35px;
+    color: var(--color-white);
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 180%;
+  }
+
+  &__doctor {
+    padding: 5px 26px;
+    color: var(--color-white);
+    border: 3px dashed var(--color-light-green);
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 180%;
+  }
+}
+
+@media screen and (max-width: (1200px)) {
+  .aboutClover {
+    padding-top: 465px;
+    &__row {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 45px;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 150%;
+    }
+
+    &__info p {
+      font-size: 18px;
+      line-height: 160%;
+    }
+
+    &__doctor {
+      padding: 9px 54px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+}
+
+@media screen and (max-width: (767px)) {
+}
+
+@media screen and (max-width: 567px) {
+  .aboutClover {
+    margin-top: -125px;
+    padding-top: 105px;
+    &__title {
+      font-size: 16px;
+      line-height: 150%;
+
+      &::before {
+        position: absolute;
+        top: -10px;
+        width: 50px;
+        height: 3px;
+        content: "";
+        border-radius: 50px;
+        background: var(--color-light-green);
+      }
+    }
+
+    &__row {
+      padding-bottom: 0;
+      gap: 15px;
+    }
+
+    &__info p {
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 160%;
+    }
+
+    &__doctor {
+      padding: 8px 31px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

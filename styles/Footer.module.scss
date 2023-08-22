@@ -1,0 +1,237 @@
+.footer {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  &__contactsWrapper {
+    min-width: 48%;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    padding-top: 38px;
+    color: var(--color-black);
+    font-size: 35px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 124.2%;
+  }
+
+  &__contactsGroup {
+    display: flex;
+    flex-direction: column;
+    max-width: 510px;
+    margin-bottom: 70px;
+    color: var(--color-black);
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+    gap: 25px;
+  }
+
+  &__telegram {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
+  &__telegram svg {
+    margin-left: 20px;
+  }
+
+  &__tel {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
+  &__mail {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__subscribeWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 11px;
+  }
+  &__subscribeTitle {
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+  }
+
+  &__subscribeSocialList {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+
+  &__formWrapper {
+    width: 100%;
+    max-width: 647px;
+    padding: 38px;
+    border-radius: 20px;
+    background: #f8f8f8;
+  }
+
+  &__formTitle {
+    margin-bottom: 33px;
+    color: var(--color-black);
+    font-size: 35px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 124.2%;
+  }
+
+  &__formSubtitle {
+    margin-bottom: 55px;
+    color: var(--color-black);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 124.2%;
+  }
+
+  &__copyright {
+    padding: 34px 0;
+    text-align: center;
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 140%;
+  }
+
+  &__copyrightLink {
+    text-decoration: underline;
+    color: var(--color-black);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &__formWrapper {
+      display: flex;
+      flex-direction: column;
+      width: unset;
+      max-width: unset;
+      margin: 0 -40px;
+      padding: 65px 100px 47px;
+    }
+    &__formTitle {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    &__formSubtitle {
+      margin-bottom: 35px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    &__contactsWrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+      padding-top: 60px;
+    }
+
+    &__telegram {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__contactsGroup {
+      margin-bottom: 40px;
+    }
+
+    &__subscribeWrapper {
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    &__wrapper {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+    &__formWrapper {
+      max-width: 100%;
+      margin: 0;
+      padding: 35px 20px 45px;
+    }
+    &__formTitle {
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 120%;
+    }
+
+    &__contactsGroup {
+      margin-bottom: 45px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 100%;
+      gap: 15px;
+    }
+
+    &__formSubtitle {
+      margin-bottom: 30px;
+      padding: 0 10px;
+      font-size: 12px;
+      line-height: 120%;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      padding-top: 41px;
+      font-size: 20px;
+    }
+
+    &__telegram svg {
+      width: 26px;
+      height: 26px;
+      margin-left: 10px;
+    }
+
+    &__contactsGroup {
+      gap: 15px;
+    }
+
+    &__subscribeTitle {
+      font-size: 12px;
+    }
+
+    &__copyright {
+      padding: 0 15px 10px;
+      font-size: 10px;
+
+      & svg {
+        width: 9px;
+        height: 9px;
+      }
+    }
+  }
+}

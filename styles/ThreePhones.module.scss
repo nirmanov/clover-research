@@ -1,0 +1,38 @@
+.threePhones {
+  position: relative;
+  z-index: 30;
+  margin-top: -55px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    gap: 51px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .threePhones {
+    margin-top: -100px;
+    &__wrapper {
+      gap: 6vw;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .threePhones {
+    &__wrapper {
+      gap: 10vw;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .threePhones {
+    margin-top: -20px;
+
+    &__wrapper {
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.androidApp {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    max-width: 813px;
+    padding-bottom: 51px;
+    text-align: center;
+    color: #3c4353;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 150%;
+  }
+
+  &__bg {
+    position: relative;
+    z-index: -1;
+    bottom: 0;
+    width: 760px;
+    height: 760px;
+    border-radius: 50%;
+    background: linear-gradient(
+      151deg,
+      rgba(243, 252, 243, 0.8) 0%,
+      rgba(254, 246, 232, 0.8) 100%
+    );
+  }
+
+  &__imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 45px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 20px;
+    left: 36px;
+    max-width: 790px;
+  }
+
+  &__textBlock {
+    position: absolute;
+    top: 1px;
+    right: -100px;
+    max-width: 300px;
+    padding: 32px;
+    color: #3c4353;
+    border-radius: 14px 14px 14px 0px;
+    background: var(--color-white);
+    box-shadow: 0px 40px 40px 0px rgba(175, 175, 175, 0.25);
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 150%;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .androidApp {
+    &__wrapper {
+      padding-top: 50px;
+    }
+    &__title {
+      font-size: 32px;
+      font-weight: 700;
+    }
+    &__bg {
+      width: 506px;
+      height: 506px;
+    }
+
+    &__imageWrapper {
+      padding-top: 160px;
+    }
+    &__image {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      max-width: 532px;
+    }
+
+    &__textBlock {
+      top: -107px;
+      right: -45px;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .androidApp {
+    &__wrapper {
+      padding-top: 35px;
+
+      padding-bottom: 13px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+    &__bg {
+      width: 221px;
+      height: 221px;
+    }
+
+    &__imageWrapper {
+      padding-top: 77px;
+    }
+
+    &__image {
+      top: 28px;
+      left: 0px;
+      max-width: 229px;
+    }
+
+    &__textBlock {
+      top: -72px;
+      right: -2px;
+      max-width: 148px;
+      padding: 13px 14px;
+      font-size: 12px;
+    }
+  }
+}

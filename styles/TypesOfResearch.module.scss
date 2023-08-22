@@ -80,6 +80,7 @@
       padding-top: 165px;
       background-position: 88px 50px;
       background-size: 320px;
+      gap: 15px;
     }
 
     &__info {
@@ -108,12 +109,12 @@
 
     &__imgWrapper {
       align-items: center;
+      justify-content: space-between;
       gap: 15px;
+    }
 
-      & img {
-        width: 130px;
-        height: 273px;
-      }
+    &__img {
+      width: 47%;
     }
   }
 }
@@ -125,10 +126,12 @@
     }
 
     &__imgWrapper {
-      & img {
-        width: 100%;
-        height: unset;
-      }
+      justify-content: space-around;
+    }
+
+    &__img {
+      width: 47%;
+      height: unset;
     }
 
     &__easyUse {
@@ -157,12 +160,8 @@
     }
     &__imgWrapper {
       justify-content: space-between;
-
-      & img {
-        width: 130px;
-        height: 279px;
-      }
     }
+
     &__list {
       margin-bottom: 33px;
       font-size: 14px;

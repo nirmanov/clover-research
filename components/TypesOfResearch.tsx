@@ -44,6 +44,7 @@ const TypesOfResearch = () => {
           </div>
           <div className={styles.typesOfResearch__imgWrapper}>
             <Image
+              className={styles.typesOfResearch__img}
               src={img1}
               alt="img"
               data-aos="fade-up"
@@ -51,6 +52,7 @@ const TypesOfResearch = () => {
               data-aos-delay="100"
             ></Image>
             <Image
+              className={styles.typesOfResearch__img}
               src={img2}
               alt="img"
               data-aos="fade-up"

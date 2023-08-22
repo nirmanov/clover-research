@@ -56,6 +56,7 @@ const Form: React.FC = () => {
     }
 
     console.log(formData);
+    alert("Заявка успешно отправлена.");
   };
 
   return (

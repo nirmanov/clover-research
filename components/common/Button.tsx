@@ -1,14 +1,7 @@
 import React from "react";
+import { ButtonPropsType } from "@/types/types";
 
-export interface Props {
-  isDisabled?: boolean;
-  btnType?: "button" | "submit";
-  className: string;
-  onClick?: () => void;
-  children?: React.ReactNode;
-}
-
-const Button: React.FC<Props> = ({
+const Button: React.FC<ButtonPropsType> = ({
   isDisabled,
   btnType,
   className,

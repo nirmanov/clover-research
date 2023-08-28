@@ -1,12 +1,4 @@
-import { InputHTMLAttributes } from "react";
-
-interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
-  type: string;
-  value?: string;
-  name: string;
-  className?: string;
-}
+import { TextFieldPropsType } from "@/types/types";
 
 export function TextField({
   id,
@@ -16,7 +8,7 @@ export function TextField({
   name,
   className,
   ...props
-}: TextFieldProps) {
+}: TextFieldPropsType) {
   return (
     <label htmlFor={id}>
       {label}

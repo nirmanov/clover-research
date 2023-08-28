@@ -6,9 +6,10 @@ import vc_ru from "@/public/images/social-vc.ru.svg";
 import vk from "@/public/images/social-vk.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { SocialLinksType } from "@/types/types";
 
 const SocialLinks: React.FC = () => {
-  const iconsData = [
+  const iconsData: SocialLinksType[] = [
     { iconUrl: behance, name: "behance", link: "/" },
     { iconUrl: dribble, name: "dribble", link: "/" },
     { iconUrl: hh, name: "hh", link: "/" },

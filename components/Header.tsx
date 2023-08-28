@@ -5,7 +5,6 @@ import styles from "@/styles/Header.module.scss";
 import Image from "next/image";
 import logo from "@/public/images/logo.svg";
 import clsx from "clsx";
-import Button from "@/components/common/Button";
 import BurgerBtn from "@/components/common/MenuBtn";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -24,9 +23,12 @@ const Header = () => {
             <Image className={styles.header__logo} src={logo} alt="JoyDev" />
           </Link>
           <div className={styles.header__btnsWrapper}>
-            <Button className={clsx("btn", "btnPrimary", styles.header__btn)}>
+            <Link
+              href="#form"
+              className={clsx("btn", "btnPrimary", styles.header__btn)}
+            >
               Заказать разработку
-            </Button>
+            </Link>
             <BurgerBtn />
           </div>
         </div>

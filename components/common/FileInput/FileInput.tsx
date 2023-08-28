@@ -1,6 +1,14 @@
 import styles from "./FileInput.module.scss";
+import React from "react";
+import { FileInputPropsType } from "@/types/types";
 
-const FileInput = ({ id, name, accept, multiple, onChange }) => {
+const FileInput: React.FC<FileInputPropsType> = ({
+  id,
+  name,
+  accept,
+  multiple,
+  onChange,
+}) => {
   return (
     <>
       <div className={styles.fileInput}>

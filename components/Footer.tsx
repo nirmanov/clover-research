@@ -81,7 +81,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className={styles.footer__formWrapper}>
+          <div id="form" className={styles.footer__formWrapper}>
             <h3
               className={styles.footer__formTitle}
               data-aos="fade-up"

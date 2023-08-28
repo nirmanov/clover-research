@@ -80,6 +80,8 @@ const Form: React.FC = () => {
           type="tel"
           id="phoneNumber"
           name="phoneNumber"
+          pattern="^[0-9+]+$"
+          title="Можно вводить только цифры и +"
           value={formData.phoneNumber}
           onChange={handleInputChange}
           required
